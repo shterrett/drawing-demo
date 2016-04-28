@@ -13,7 +13,7 @@
 }
 
 .canvas-container {
-    position: fixed;
+    position: fixed!important;
     top: 100px;
     left: 520px;
     border: 5px solid black;

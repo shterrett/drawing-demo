@@ -1,6 +1,6 @@
 # Drawer
 
-This is a demo that parses and **extremely** simple drawing language and draws
+This is a demo that parses an **extremely** simple drawing language and draws
 lines on the screen.
 
 ## Example Script

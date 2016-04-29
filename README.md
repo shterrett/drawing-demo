@@ -6,32 +6,32 @@ lines on the screen.
 ## Example Script
 
 Alter `transform` function to change the scaling and orientation.
-Currently puts the origin at the bottom left and divides the space into steps of 15
+Currently puts the origin at the bottom left and divides the space into steps of 50
 
 ```
 START
 Go to 0, 0
 Pen Down
-Go to 33.333333, 33.333333
+Go to 10, 10
 Pen Up
 END
 ```
 
 ```
 START
-Go to 16.66667, 0
+Go to 5, 0
 Pen Down
-Go to 33.333333, 16.66667
-Go to 16.66667, 33.333333
-Go to 0, 16.66667
-Go to 16.66667, 0
+Go to 10, 5
+Go to 5, 10
+Go to 0, 5
+Go to 5, 0
 Pen Up
-Go to 23.33333, 23.33333
+Go to 7, 7
 Pen Down
-Go to 10, 10
+Go to 3, 3
 Pen Up
-Go to 10, 23.33333
+Go to 3, 7
 Pen Down
-Go to 23.33333, 10
+Go to 7, 3
 END
 ```

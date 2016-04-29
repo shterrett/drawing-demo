@@ -20,6 +20,15 @@ describe("Parser", function () {
         expect(point).toEqual([3, 5]);
     });
 
+    it("Extracts coordinates from a 'Go to' line with decimals", function () {
+        var line = "Go to 15.235, 16.234";
+
+        var parser = new Parser();
+        var point = parser.extractPoint(line);
+
+        expect(point).toEqual([15.235, 16.234]);
+    });
+
     it("Registers callbacks for events", function () {
         var callback = function () { return true };
 

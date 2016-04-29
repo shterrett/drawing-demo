@@ -12,7 +12,7 @@ window.Parser = function Parser (callbacks){
     }
 
     this.extractPoint = function (line) {
-        return line.match(/\d+/g).map(function (num, i, nums) {
+        return line.match(/\d+(\.\d+)?/g).map(function (num, i, nums) {
             return Number(num);
         });
     }

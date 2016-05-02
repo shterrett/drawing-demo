@@ -3,7 +3,7 @@
 var canvas = this.__canvas = new fabric.Canvas("canvas", { width: 500, height: 500 });
 
 function transform (point) {
-    return [point[0] * 50, canvas.width - (point[1] * 50)];
+    return [point[0] * 50, canvas.height - (point[1] * 50)];
 }
 
 function makeLine(start, end) {

@@ -14,7 +14,7 @@ Go to 0, 0
 Pen Down
 Go to 10, 10
 Pen Up
-END
+STOP
 ```
 
 ```
@@ -33,5 +33,5 @@ Pen Up
 Go to 3, 7
 Pen Down
 Go to 7, 3
-END
+STOP
 ```

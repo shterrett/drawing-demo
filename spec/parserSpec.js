@@ -98,13 +98,13 @@ describe("Parser", function () {
         expect(parser.drawing).toBeFalsy();
     });
 
-    it("executes the on end callback on 'END' line, and clears drawing and currentPoint", function () {
+    it("executes the on end callback on 'STOP' line, and clears drawing and currentPoint", function () {
         var called = false;
         var parser = new Parser({ onEnd: function () { called = true } });
         parser.drawing = true;
         parser.currentPoint = [25, 13];
 
-        parser.executeLine("END");
+        parser.executeLine("STOP");
 
         expect(called).toBeTruthy();
         expect(parser.currentPoint).toEqual([]);
@@ -122,7 +122,7 @@ describe("Parser", function () {
                       "Go to 7, 7",
                       "Pen Down",
                       "Go to 12, 12",
-                      "END"].join("\n");
+                      "STOP"].join("\n");
 
         var started = false;
         var ended = false;

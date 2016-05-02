@@ -27,7 +27,7 @@ window.Parser = function Parser (callbacks){
         var goTo = /^Go to/i;
         var pen = /^Pen/i;
         var start = /^start$/i;
-        var end = /^end$/i;
+        var end = /^stop$/i;
 
         if (line.match(goTo)) {
             this.executeGoTo(line);
